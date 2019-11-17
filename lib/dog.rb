@@ -87,7 +87,7 @@ class Dog
   
   def update
     sql = "UPDATE dogs SET name = ?, breed = ? WHERE id = ?"
-    self.dbc(sql, self.name, self.breed, self.id)
+    Dog.dbc(sql, self.name, self.breed, self.id)
   end
 
   
